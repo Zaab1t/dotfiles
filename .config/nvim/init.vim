@@ -4,6 +4,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
 call plug#end()
 
+set t_Co=256
 set nocompatible
 syntax enable
 filetype plugin indent on
@@ -35,5 +36,8 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^|\s\s\)\zs\.\S\+'
 
 let g:neomake_python_python_exe = 'python3'
+let g:neomake_python_enabled_makers = ['flake8']
 
 autocmd BufWritePost,BufReadPost * Neomake
+
+command Config execute 'e ~/.config/nvim/init.vim'
