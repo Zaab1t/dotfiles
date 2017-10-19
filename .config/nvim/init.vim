@@ -1,6 +1,5 @@
 call plug#begin('~/.config/nvim/bundle')
 Plug 'benekastah/neomake'
-Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
 call plug#end()
 
@@ -8,19 +7,31 @@ set t_Co=256
 set nocompatible
 syntax enable
 filetype plugin indent on
-colorscheme solarized
 
 set number
 set incsearch
+set nohlsearch
 set ignorecase
 set smartcase
-set nohlsearch
 set nobackup
 set noswapfile
-set nowrap
+set wrap
 set path+=**  " this is brilliant
 set background=dark
 set encoding=utf-8
+set showmatch
+set cursorline
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab  " tabs are spaces
+set colorcolumn=80
+
+
+" move by visual line
+nnoremap j gj
+nnoremap k gk
 
 " Enables the special status bar and puts a tab list up top.
 set laststatus=2
