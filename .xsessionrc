@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# spawn xmobar
+xmobar &
+
+# Set background image with feh
+feh --bg-scale /usr/share/backgrounds/warty-final-ubuntu.png &
