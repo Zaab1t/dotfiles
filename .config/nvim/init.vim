@@ -52,3 +52,5 @@ let g:neomake_python_enabled_makers = ['flake8']
 autocmd BufWritePost,BufReadPost * Neomake
 
 command Config execute 'e ~/.config/nvim/init.vim'
+command W execute 'w'
+command Q execute 'q'
