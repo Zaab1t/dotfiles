@@ -16,4 +16,8 @@ main = xmonad $ defaultConfig
       focusedBorderColor = "#226fa5", 
       normalBorderColor = "#191919",
 
-      layoutHook = avoidStruts $ myLayout }
+      layoutHook = avoidStruts $ myLayout,
+      handleEventHook = mconcat
+                      [ docksEventHook
+                      , handleEventHook defaultConfig ]
+      }
