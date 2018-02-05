@@ -3,8 +3,8 @@
 #define FONTSIZE 15
 
 ! font
-!*.font: xft:Ubuntu Mono derivative Powerline:size=15,xft:DejaVu Sans Mono for Powerline:size=15,xft:DejaVu Serif:size=15,xft:DroidSerif-Regular:size=15
-*.font: xft:Ubuntu Mono derivative Powerline:size=FONTSIZE,xft:DejaVu Sans Mono for Powerline:size=FONTSIZE,xft:DejaVu Serif:size=FONTSIZE,xft:DroidSerif-Regular:size=FONTSIZE
+*.font: xft:Ubuntu Mono
+
 
 ! rofi settings
 rofi.font: Ubuntu Mono FONTSIZE
@@ -28,4 +28,4 @@ URxvt.intensityStyles: false
 URxvt.urlLauncher: chromium-browser
 
 URxvt*transparent: true
-URxvt*shading: 10
+URxvt*shading: 20
