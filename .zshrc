@@ -91,3 +91,4 @@ alias cd..="cd .."
 alias la="ls -a"
 alias bpy="bpython3"
 alias termbin='function __termbin() { cat $* | nc termbin.com 9999; unset -f __termbin;}; __termbin'
+alias codecat='function __codecat() { cat $* | pygmentize;}; __codecat'
