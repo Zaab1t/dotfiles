@@ -3,6 +3,8 @@ Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rust-lang/rust.vim'
+Plug 'roxma/nvim-completion-manager'
+Plug 'honza/vim-snippets'
 call plug#end()
 
 set nocompatible
@@ -16,19 +18,28 @@ set incsearch
 set nohlsearch
 set ignorecase
 set smartcase
-set nobackup
-set noswapfile
-set wrap
 set path+=**  " this is brilliant
 set background=dark
 set encoding=utf-8
 set showmatch
+set undofile
 
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab  " tabs are spaces
 set colorcolumn=80
+
+
+" Wraps text at 80, but not source code
+set tw=79
+set nowrap
+set fo-=t
+
+" No clutter
+set backupdir=~/.config/nvim/backup/
+set directory=~/.config/nvim/swap/
+set undodir=~/.config/nvim/undo/
 
 
 " move by visual line
