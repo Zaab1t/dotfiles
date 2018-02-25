@@ -28,7 +28,7 @@ alias bpy="bpython3"
 
 
 function codecat() {
-    cat $* | pygmentize;
+    cat $* | pygmentize | less;
 }
 
 
