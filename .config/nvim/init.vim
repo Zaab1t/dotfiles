@@ -5,6 +5,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'rust-lang/rust.vim'
 Plug 'roxma/nvim-completion-manager'
 Plug 'honza/vim-snippets'
+Plug 'vim-ruby/vim-ruby'
 call plug#end()
 
 set nocompatible
@@ -23,6 +24,7 @@ set background=dark
 set encoding=utf-8
 set showmatch
 set undofile
+set relativenumber
 
 set tabstop=4
 set softtabstop=4
@@ -30,6 +32,8 @@ set shiftwidth=4
 set expandtab  " tabs are spaces
 set colorcolumn=80
 
+" only 2 space indent in ruby, apparently
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
 " Wraps text at 80, but not source code
 set tw=79
@@ -64,7 +68,7 @@ let g:neomake_python_python_exe = 'python3'
 let g:neomake_python_enabled_makers = ['flake8']
 
 autocmd BufWritePost,BufReadPost * Neomake
-autocmd BufNewFile,BufRead *.th  set syntax=clojure
+autocmd BufNewFile,BufRead *.th set syntax=clojure
 
 command Config execute 'e ~/.config/nvim/init.vim'
 command W execute 'w'
