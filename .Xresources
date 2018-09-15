@@ -5,11 +5,6 @@
 ! font
 *.font: xft:Ubuntu Mono
 
-
-! rofi settings
-rofi.font: Ubuntu Mono FONTSIZE
-rofi.terminal: urxvt
-
 ! scrollbar
 URxvt.scrollBar: false
 
