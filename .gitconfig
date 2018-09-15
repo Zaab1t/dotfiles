@@ -1,0 +1,9 @@
+[user]
+	name = Carl Bordum Hansen
+	email = carl@bordum.dk
+[push]
+	default = simple
+[credential]
+	helper = store
+[color]
+	ui = true
