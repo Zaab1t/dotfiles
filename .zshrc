@@ -6,7 +6,6 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
-ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -24,7 +23,7 @@ export TERMINAL='urxvt'
 
 alias cd..="cd .."
 alias la="ls -a"
-alias bpy="bpython3"
+alias cat="bat"  # you can always do \cat if you need los originalos
 
 
 function codecat() {
