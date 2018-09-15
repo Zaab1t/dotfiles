@@ -1,5 +1,5 @@
 ! colorscheme
-#include "/home/zaab/.Xresources-colorscheme"
+#include "/home/carl/.Xresources-colorscheme"
 #define FONTSIZE 15
 
 ! font

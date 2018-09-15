@@ -1,4 +1,4 @@
-export ZSH=/home/zaab/.oh-my-zsh
+export ZSH=/home/carl/.oh-my-zsh
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
