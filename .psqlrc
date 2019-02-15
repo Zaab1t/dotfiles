@@ -1,0 +1,23 @@
+-- ``\set name value`` assigns a psql variable
+-- any variable can be unassigned using ``\unset name`` (empty value)
+\set PROMPT1 '%~%x%# '
+\x auto
+\set ON_ERROR_STOP on
+\set ON_ERROR_ROLLBACK interactive
+
+-- ``\pset option value`` affects the output of query result tables
+\pset null '¤'
+\pset linestyle 'unicode'
+\pset unicode_border_linestyle single
+\pset unicode_column_linestyle single
+\pset unicode_header_linestyle double
+
+set intervalstyle to 'postgres_verbose';
+
+-- ``\setenv name value`` sets an environment variable only in psql
+-- use ``\setenv name`` to unset
+\setenv LESS '-iMFXSx4R'
+\setenv EDITOR '/usr/bin/vim'
+
+-- tip: to inspect the sql statement some psql ``\command`` executes,
+-- do ``\set ECHO_HIDDEN true`` before executing it.
